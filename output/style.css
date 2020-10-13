@@ -10,5 +10,12 @@ body {
 }
 .container {
     opacity: .78;
+   
+}
+
+.card employee-card {
     box-shadow:  5px 10px;
+}
+title {
+    text-shadow:  5px 10px;
 }
