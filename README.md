@@ -34,8 +34,7 @@ The Drink to the Weather application has many features in order to simplify the 
 ## Features 
 
 ### __1.Tests__
-
-Our input card functions much like a bartender would. It asks you how you feel, where you from and will use a bouncer(js) if it has to. In order to avoid the bouncer.js you need to enter in at least 3 characters or it will alert you in red below the input field.  
+    This code tests 
 
 ### __2. HTML Self-generator__
 
