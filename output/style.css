@@ -1,0 +1,14 @@
+body {
+    background-image: url("../Assets/tiles-shapes-2617112_1920.jpg");
+    /* color: rgb(245, 229, 206); */
+  
+   }
+
+.container-fluid{
+    opacity: .7;
+    
+}
+.container {
+    opacity: .78;
+    box-shadow:  5px 10px;
+}

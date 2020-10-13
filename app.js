@@ -7,8 +7,9 @@ const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
-
 const render = require("./lib/htmlRenderer");
+
+const folks = [];
 
 function askQuestions() {
     inquirer
@@ -40,6 +41,11 @@ function askQuestions() {
                     type: "input",
                     message: "What is your GitHub username?",
                     name: "github"
+                    }).then( function({github}) {
+                        const eng = new Engineer(name, id, email, role, github);
+                        folks.push(eng);
+                        console.log(folks);
+                        doneYet();
                     })
 
         } else if ( role == "Intern"){ inquirer
@@ -47,11 +53,30 @@ function askQuestions() {
                 type: "input",
                 message: "What school do you attend?",
                 name: "school"
+                
+            }).then( function({school}) {
+                const intern = new Intern({name, id, email, role, school});
+                folks.push(intern);
+                console.log(folks);
+                doneYet();
             })
 
 
+        } else if (role == "Manager") {
+            inquirer
+            .prompt({
+                type: "input",
+                message: "What is your Office Number?",
+                name: "officeNumber"
+            }).then( function({officeNumber}) {
+               const manager = new Manager({name, id, email, role, officeNumber});
+                folks.push(manager);
+                console.log(folks);
+                doneYet();
+            })
         }
     })};
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
@@ -75,3 +100,35 @@ function askQuestions() {
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 askQuestions();
+function doneYet(){
+    inquirer
+    .prompt([{
+        type: "list",
+        message: "Would you like to add more employees?",
+        choices: ["Yes", "No"],
+        name: "moreFolks",
+    }]).then(
+        function({moreFolks}) {
+            if ( moreFolks == "Yes"){ 
+                askQuestions();
+            }else{ const results = render(folks);
+                     fs.writeFile("./output/team.html", results, function(err) { 
+                             if(err) throw err;
+                              console.log(err);
+                          });console.log("Successfully wrote html");
+                    
+                    }
+        })}
+
+
+// init() {
+//   console.log("hi")
+  
+//      const results = render(folks);
+//      fs.writeFile("./output/team.html", results);
+//       console.log("Successfully wrote to index.html");
+//  function(err) { 
+//      if(err) throw err;
+//       console.log(err);
+//   }
+// }
