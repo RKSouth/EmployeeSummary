@@ -34,9 +34,13 @@ Once you are set-up, you can enter in node app.js.
 Then simply follow along with the prompts.
 
  When your prompts are finished, go to the output folder and find the file labeled "team.html". Right click team.html and in the pop-up window, select "Open in Default Browser" -if you are unhappy with your entries you may select the garbage can in the top right corner of your terminal and start again.
+
 For further questions how to operate node.js:
+
 You can check out this [link](https://www.tutorialsteacher.com/nodejs/nodejs-tutorials)
-You can contact me
+
+You can contact me (see authors section)
+
 You can google "node.js" or "npm"
 ## Technologies Used
 * HTML (28.1%)
