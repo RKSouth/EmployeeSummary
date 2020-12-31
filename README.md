@@ -89,6 +89,9 @@ _The ability to get more details about employees_
 
 A little drop down in the list would be cool, so that you could store custom info like birthdays, skills or current projects. 
 
+Follow good practices for variable names, indentation, lacks quality comments
+Get all application tests pass
+
 ## Usage
 This app is for anyone that needs to keep track if their teams email/github/employee id information. It's mostly for tech managers or those that employee engineers and interns solely. However, if you would like something similiar with different peices of information feel free to contact me for customizations. 
 ## Authors
