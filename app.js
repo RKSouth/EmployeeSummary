@@ -162,7 +162,7 @@ function doneYet() {
                     const results = render(folks);
                     fs.writeFile("./output/team.html", results, function (err) {
                         if (err) throw err;
-                    }); console.log("Successfully wrote html, now you can open it and see how it looks!");
+                    }); console.log("Successfully wrote html, now you can open it and see how it looks! (team.html)");
 
                 }
             })

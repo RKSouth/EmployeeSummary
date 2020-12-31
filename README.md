@@ -22,7 +22,7 @@ In order to get started using this app you may want to watch this video or you c
 
 _Written Instructions_
 
-In order to use this code you will need to open the files using vs code(or a similar IDE but I cannot garuntee my instructions being helpful for anything else.) Once you have everything open in your explorer, right click app.js and select "Open Integrated Terminal". Below, the code a terminal should pop-up go ahead and make sure you have the correct terminal for further information on what the correct terminal is [click here](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial). 
+In order to use this code you will need to open the files using vs code(or a similar IDE but I cannot guarantee my instructions being helpful for anything else.) Once you have everything open in your explorer, right click app.js and select "Open Integrated Terminal". Below, the code a terminal should pop-up go ahead and make sure you have the correct terminal for further information on what the correct terminal is [click here](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial). 
 Next you want to type in a series of commands to set up your terminal and load your files. Make sure to hit enter after each item and wait for it to process.
 * _1st_ npm install  
 * _2nd_ npm install inquire 
